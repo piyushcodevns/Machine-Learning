@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.linspace(0, 10, 100) 
+y = np.sin(x)
+fig, ax = plt.subplots()
+ax.plot(x, y, color='red', linestyle='-', linewidth=2)
+ax.set_title('Sine Wave')
+ax.set_xlabel('X-axis')  
+ax.set_ylabel('Y-axis')  
+ax.grid(True, linestyle='--', color='gray', alpha=0.5)
+ax.set_xticks(np.linspace(0, 10, 11))
+ax.set_yticks(np.linspace(-1, 1, 11))
+ax.legend(['Sine Wave'])
+ax.spines['top'].set_visible(False)
+ax.spines['right'].set_visible(False)
+plt.show() 
