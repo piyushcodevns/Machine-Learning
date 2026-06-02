@@ -10,7 +10,6 @@ print("===== Machine Learning Chatbot =====")
 # Topics
 topics = df["Topic"].astype(str).tolist()
 
-# Vectorizer
 vectorizer = TfidfVectorizer()
 
 # Topic vectors
