@@ -17,6 +17,7 @@ topic_vectors = vectorizer.fit_transform(topics)
 
 while True:
     question = input("\nAsk Question: ").lower()
+    
 
     if question == "exit":
         print("Chatbot Closed")
